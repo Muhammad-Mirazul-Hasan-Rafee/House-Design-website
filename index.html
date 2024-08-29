@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House design by your choice</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<style>
+
+.manrope-font{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+</style>
 </head>
 
 <body>
     <!-- header -->
     <header>
         <!-- navbar -->
-        <nav class="flex justify-between ml-28 mr-28">
+        <nav class="hidden md:flex justify-between ml-28 mr-28">
+  
             <div>
+  
                 <button class="flex mt-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                         <path fill-rule="evenodd"
@@ -68,8 +82,8 @@
                 <img class="justify-center items-center" src="assets/banner.png" alt="">
             </div>
             <div class="ml-28 mr-28 text-center">
-                <h1 class="font-extrabold text-6xl mt-6">A barn house of this design has a striking appearance</h1>
-                <p class="mt-6 text-base text-center">The barn house captivates with its blend of rustic charm and
+                <h1 class=" manrope-font  font-extrabold text-6xl mt-6">A barn house of this design has a striking appearance</h1>
+                <p class="manrope-font mt-6 text-base text-center">The barn house captivates with its blend of rustic charm and
                     modern sophistication, featuring
                     weathered
                     wood, sleek metal accents, and large windows that flood the space with natural light.</p>
@@ -90,265 +104,205 @@
 
     <!-- body -->
 
-    <section class="bg-[#F4F4F4] flex ml-28 mr-28 mt-28  gap-5 h-[830px] w-[1440] p-[65px]">
-        <img class="w-16 h-28 rotate-[-25deg]" src="assets/Vector.png" alt="">
-
-        <div class="mt-32 mb-24   max-w-lg">
-
-
-            <button class="bg-[#FFFFFF] w-36 h-9 flex px-4 py-2 rounded-3xl gap-2 mb-4"><svg
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
+    <section class="bg-[#F4F4F4] flex flex-col lg:flex-row ml-4 mr-4 lg:mt-28 gap-5 lg:h-[830px] lg:ml-28 lg:mr-28 mt-10  p-4 lg:p-[65px]">
+        <img class="w-12 h-20 lg:w-16 lg:h-28 rotate-[-25deg] mx-auto lg:mx-0" src="assets/Vector.png" alt="">
+    
+        <div class="lg:mt-32 mb-24 max-w-lg">
+            <button class="bg-[#FFFFFF] w-36 h-9 flex px-4 py-2 rounded-3xl gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
-                About Us</button>
-            <h2 class="font-bold text-4xl">We design thoughtful, liveable spaces</h2>
-
-            <p class="mt-6">The barn house captivates with its blend of rustic charm and
-                modern sophistication, featuring weathered wood, sleek metal accents.</p>
-
-            <div class="gap-8 mt-6">
-                <aside class="flex gap-6 bg-[#FFFFFF]  h-32 max-w-lg p-4">
+                About Us
+            </button>
+            <h2 class="manrope-font font-bold text-2xl lg:text-4xl">We design thoughtful, livable spaces</h2>
+            <p class="manrope-font text-sm mt-6  lg:text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            
+            <div class="gap-8 mt-6 space-y-6">
+                <aside class="flex gap-4 lg:gap-6 bg-[#FFFFFF] h-32 p-4">
                     <div>
                         <img class="h-16 w-16" src="./assets/commercial.png" alt="">
                     </div>
                     <div>
-                        <h4>Commercial</h4>
-                        <article class="mt-3">The barn house captivates with its blend of rustic charm and modern.
-                        </article>
+                        <h4 class="font-bold">Commercial</h4>
+                        <article class="text-sm mt-3">The barn house captivates with its blend of rustic charm and modern.</article>
                     </div>
                 </aside>
-                <aside class="flex gap-6 mt-6 bg-[#FFFFFF] h-32 max-w-lg p-4">
+                <aside class="flex gap-4 lg:gap-6 bg-[#FFFFFF] h-32 p-4">
                     <div>
                         <img class="h-16 w-16" src="assets/residential.png" alt="">
                     </div>
                     <div>
-                        <h4>Residential</h4>
-                        <article class="mt-3">The barn house captivates with its blend of rustic charm and modern.
-                        </article>
+                        <h4 class="manrope-font font-bold">Residential</h4>
+                        <article class="text-sm mt-3">The barn house captivates with its blend of rustic charm and modern.</article>
                     </div>
                 </aside>
             </div>
-
         </div>
-        <div class="mt-24 mb-36  ">
-            <img class="w-[550px] h-[537px] " src="assets/Rectangle.png" alt="">
+        
+        <div class="mt-10 lg:mb-36 mx-auto lg:mx-0 lg:mt-24 mb-10 ">
+            <img class="w-full lg:w-[550px] h-auto lg:h-[530px]" src="assets/Rectangle.png" alt="">
         </div>
     </section>
+    
 
     <!-- Our work process -->
 
-    <section class="mt-14 ml-28 mr-28 bg-[#F4F4F4]">
-        <div class="items-center justify-center text-center ">
-
+    <section class="mt-14 lg:ml-28 lg:mr-28 bg-[#F4F4F4] p-4 lg:p-0">
+        <div class="text-center">
             <div class="flex justify-center items-center">
-                <button
-                    class="bg-[#FFFFFF]  rounded-3xl flex gap-2 px-8 py-2 mt-8 justify-center items-center text-center"><svg
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                <button class="bg-[#FFFFFF] rounded-3xl flex gap-2 px-8 py-2 mt-8 justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                     </svg>
-                    How we works</button>
+                    How we work
+                </button>
             </div>
-            <h2 class="mt-3 font-bold text-4xl">Our Works Process</h2>
-            <p class="mt-6 text-base font-normal mx-52">The barn house captivates with its blend of rustic charm and
-                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <h2 class="mt-3 font-bold text-2xl lg:text-4xl">Our Work Process</h2>
+            <p class="manrope-font mt-6 font-normal text-sm lg:mx-48">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-
-        <!-- four card -->
-
-        <div class="flex justify-between p-2">
-            <div class="flex justify-around mt-8 box-border h-50 w-60  p-4 border-4 bg-[#E7C1D3] rounded-2xl ">
-
-                <div class="px-6">
-                    <img class="h-12 w-12" src="assets/concept.png" alt="">
-                    <h4 class="mt-2">Concept</h4>
-                    <p class="mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+    
+        <!-- Four cards -->
+        <div class="flex flex-col lg:flex-row justify-between gap-4 p-2 mt-8">
+            <div class="flex justify-center lg:justify-around box-border h-50 w-full lg:w-60 p-4 border-4 bg-[#E7C1D3] rounded-2xl">
+                <div class="text-center lg:px-6">
+                    <img class="h-12 w-12 mx-auto" src="assets/concept.png" alt="">
+                    <h4 class="manrope-font mt-2 font-semibold">Concept</h4>
+                    <p class="manrope-font mt-2 text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
-
-
-
-            <div class="flex justify-around mt-8 box-border h-50 w-60  p-4 border-4 bg-[#EFDA6E] rounded-2xl ">
-
-                <div class="px-6">
-                    <img class="h-12 w-12" src="assets/flow-chart.png" alt="">
-                    <h4 class="mt-2">Design Process</h4>
-                    <p class="mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+    
+            <div class="flex justify-center lg:justify-around box-border h-50 w-full lg:w-60 p-4 border-4 bg-[#EFDA6E] rounded-2xl">
+                <div class="text-center lg:px-6">
+                    <img class="h-12 w-12 mx-auto" src="assets/flow-chart.png" alt="">
+                    <h4 class="manrope-font mt-2 font-semibold">Design Process</h4>
+                    <p class="manrope-font mt-2 text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
-
-
-
-            <div class="flex justify-around mt-8 box-border h-50 w-60 p-4 border-4 bg-[#A4DAC3] rounded-2xl ">
-
-                <div class="px-6">
-                    <img class="h-12 w-12" src="assets/vision.png" alt="">
-                    <h4 class="mt-2">Supervision</h4>
-                    <p class="mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+    
+            <div class="flex justify-center lg:justify-around box-border h-50 w-full lg:w-60 p-4 border-4 bg-[#A4DAC3] rounded-2xl">
+                <div class="text-center lg:px-6">
+                    <img class="h-12 w-12 mx-auto" src="assets/vision.png" alt="">
+                    <h4 class="manrope-font mt-2 font-semibold">Supervision</h4>
+                    <p class="manrope-font mt-2 text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
-
-            <div class="flex justify-around mt-8 box-border h-50 w-60 p-4 border-4 bg-[#77AAEA] rounded-2xl ">
-
-                <div class="px-6">
-                    <img class="h-12 w-12" src="assets/budget-planning.png" alt="">
-                    <h4 class="mt-2">Budget Planning</h4>
-                    <p class="mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+    
+            <div class="flex justify-center lg:justify-around box-border h-50 w-full lg:w-60 p-4 border-4 bg-[#77AAEA] rounded-2xl">
+                <div class="text-center lg:px-6">
+                    <img class="h-12 w-12 mx-auto" src="assets/budget-planning.png" alt="">
+                    <h4 class="manrope-font mt-2 font-semibold">Budget Planning</h4>
+                    <p class="manrope-font mt-2 text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
 
     <!-- main part1: Our Latest Portfolio -->
 
-    <main class="bg-[#FFFFFF] mb-24">
+    <main class="bg-[#FFFFFF] mb-24 p-4 lg:p-0">
 
-        <div class="items-center justify-center text-center ">
-
+        <div class="text-center">
+    
             <div class="flex justify-center items-center">
-                <button
-                    class="bg-[#ABEF5F]  rounded-3xl flex gap-2 px-8 py-2 mt-8 justify-center items-center text-center"><svg
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                <button class="bg-[#ABEF5F] rounded-3xl flex gap-2 px-8 py-2 mt-8 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                     </svg>
-                    Explore our Latest works</button>
+                    Explore our Latest works
+                </button>
             </div>
-            <h2 class="mt-3 font-bold text-4xl">Our Latest Portfolio</h2>
-            <p class="mt-6 text-base font-normal mx-52 p-12">The barn house captivates with its blend of rustic charm
-                and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <h2 class="manrope-font mt-3 font-bold text-2xl md:text-4xl">Our Latest Portfolio</h2>
+            <p class="manrope-font mt-6 text-base font-normal md:mx-48 md:p-12">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-
-
+    
         <!-- two divs -->
-
-        <section class="flex p-6 mt-8 ml-28 mr-28 gap-6 mb-6 h-[320px]">
-            <div class="p-6 flex border-2 rounded-2xl">
-
+        <section class="flex flex-col md:flex-row p-6 mt-8 md:mr-28 gap-6 mb-6 h-auto md:h-[325px] md:ml-28 ">
+            <div class="p-6 flex flex-col md:flex-row border-2 rounded-2xl">
                 <aside>
-
-                    <img class="w-64 h-44" src="assets/img1.png" alt="">
-
+                    <img class="w-full h-44 md:w-64 " src="assets/img1.png" alt="">
                 </aside>
-
-                <article>
-                    <h3 class="font-extrabold text-2xl text-[#494949] p-6">Commercial</h3>
-                    <p class="p-6">
-                        The barn house captivates with its blend of rustic charm and modern. The barn house captivates
-                        with its blend of rustic charm and modern .
-                    </p>
-
-                    <button
-                        class="mt-8 w-40 h-8 bg-[#FFFF] rounded-3xl flex gap-2 px-2 py-2 justify-center items-center ">View
-                        Details <svg class="bg-[#ABEF5F] h-[11px] w-[11px] rounded-full"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                            <path fill-rule="evenodd"
-                                d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-                                clip-rule="evenodd" />
+                <article class="mt-4 md:mt-0 md:ml-6">
+                    <h3 class="manrope-font font-extrabold text-xl md:text-2xl text-[#494949]">Commercial</h3>
+                    <p class="mt-4 manrope-font">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+                    <button class="mt-8 w-full md:w-40 h-8 bg-[#FFFF] rounded-3xl flex gap-2 px-2 py-2 items-center justify-center">View Details
+                        <svg class="bg-[#ABEF5F] h-[11px] w-[11px] rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
                         </svg>
                     </button>
-
                 </article>
-
             </div>
-
+    
             <div class="p-6 border-2 rounded-2xl">
-
-                <img class="w-80 h-44" src="assets/img2.png" alt="">
-
+                <img class="w-full h-44" src="assets/img2.png" alt="">
             </div>
         </section>
-
+    
         <!-- three divs -->
-
-        <section class="flex justify-between ml-28 mr-28 h-[220px] gap-6">
+        <section class="flex flex-col md:flex-row justify-between md:ml-28 md:mr-28 gap-6 h-auto md:h-[220px]">
             <div class="border-2 rounded-2xl">
-                <img class="w-56 h-44 p-6" src="assets/img3.png" alt="">
+                <img class="w-full h-44 p-6" src="assets/img3.png" alt="">
             </div>
-            <div class="p-6 gap-6 border-2 rounded-2xl flex">
-
+            <div class="p-6 border-2 rounded-2xl flex flex-col md:flex-row">
                 <aside>
-
-                    <img class="w-64 h-44" src="assets/img4.png" alt="">
-
+                    <img class="w-full md:w-64 h-44" src="assets/img4.png" alt="">
                 </aside>
-
-                <article class="w-[573px] h-[227px]  ">
-                    <h3 class="font-extrabold text-2xl text-[#494949]">Commercial</h3>
-                    <p class="">
-                        The barn house captivates with its blend of rustic charm and modern. The barn house captivates
-                        with its blend of rustic charm and modern .
-                    </p>
-
-                    <button
-                        class="mt-8 w-40 h-8 bg-[#FFFF] rounded-3xl flex gap-2 px-2 py-2 justify-center items-center ">View
-                        Details <svg class="bg-[#ABEF5F] h-[11px] w-[11px] rounded-full"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                            <path fill-rule="evenodd"
-                                d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-                                clip-rule="evenodd" />
+                <article class="mt-4 md:mt-0 md:ml-6">
+                    <h3 class="manrope-font font-extrabold text-xl md:text-2xl text-[#494949]">Commercial</h3>
+                    <p class="mt-4 manrope-font">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+                    <button class="mt-8 w-full md:w-40 h-8 bg-[#FFFF] rounded-3xl flex gap-2 px-2 py-2 items-center justify-center">View Details
+                        <svg class="bg-[#ABEF5F] h-[11px] w-[11px] rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
                         </svg>
                     </button>
-
                 </article>
-
             </div>
-
-
             <div class="border-2 rounded-2xl">
-                <img class="w-56 h-44 p-6" src="assets/img5.png" alt="">
+                <img class="w-full h-44 p-6" src="assets/img5.png" alt="">
             </div>
         </section>
-
-
-
-
-
+    
     </main>
+    
 
     <!-- main part 2:form -->
 
-    <div class="items-center justify-center text-center ">
+    <div class="text-center p-4 md:p-6 lg:p-0">
 
-        <div class="flex justify-center items-center">
-            <button
-                class="bg-[#ABEF5F]  rounded-3xl flex gap-2 px-8 py-2 mt-8 justify-center items-center text-center"><svg
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        <div class="flex justify-center">
+            <button class="bg-[#ABEF5F] rounded-3xl flex gap-2 px-6 py-2 mt-6 md:mt-8 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
-                Let’s Connect</button>
+                Let’s Connect
+            </button>
         </div>
-        <h2 class="mt-3 font-bold text-4xl">Let’s Discuss Next Project</h2>
-        <p class="mt-6 text-base font-normal mx-52">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    
+        <h2 class="manrope-font mt-3 font-bold text-2xl md:text-4xl">Let’s Discuss Next Project</h2>
+    
+        <p class="manrope-font mt-6 text-sm md:text-base font-normal mx-4 sm:mx-12 md:mx-24 lg:mx-48">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
     </div>
-
+    
 
     <section>
              <!-- form -->
 
 
-    <div>
-        <form class="grid grid-cols-2 mx-40">
-            <input type="text" name="" id="" placeholder="First Name*">
-            <input type="text" name="" id="" placeholder="Last Name*">
-            <input type="text" name="" id="" placeholder="Phone Number*">
-            <input type="text" value="" placeholder="Email Number*">
+    <div class=" flex items-center justify-center">
+        <form class="grid-cols-2 w-[473px] h-[64px] p-5 gap-x-8 gap-y-8  ">
+            <input type="text" name="" id="" placeholder= "First Name*" class="rounded-md bg-slate-600">
+            <input type="text" name="" id="" placeholder="Last Name*"  class="rounded-md bg-slate-600">
+            <input type="text" name="" id="" placeholder="Phone Number*"  class="rounded-md bg-slate-600">
+            <input type="text" value="" placeholder="Email Number*"  class="rounded-md bg-slate-600">
         </form>
-    
-        <form class="mx-40">
-    
-            <input type="text" value="" placeholder="Write your message here">
-    
+    </div>
+
+    <div class="flex items-center justify-center">
+
+        <form class="ml-[33rem] grid-cols-2 w-[900px] h-[64px] p-5 gap-x-8 gap-y-8  ">
+            <input type="text" name="" id="" placeholder= "Write your message here" class="rounded-md bg-slate-600">
         </form>
-    </div>         
-
-
+    </div>
 
     <div class="flex justify-center items-center ">
         <button
@@ -365,26 +319,22 @@
 
 
     <!-- footer -->
-    <footer style="background-color: rgb(30, 30, 30);"
-    class="text-white py-4 px-6 flex flex-col justify-center items-center">
-    <div class="text-center mb-12">
-        <h2 class="text-xl font-bold">Rintero</h2>
-        <p class="text-gray-400" style="color: rgb(100, 100, 100);">The barn house captivates with its blend of
-            rustic charm and modern sophistication.<br>Featuring weathered wood, sleek metal accents.</p>
-    </div>
-    <div class="flex justify-center mb-12">
-        <a href="#" class="mx-20">Services</a>
-        <a href="#" class="mx-20">Portfolio</a>
-        <a href="#" class="mx-20">Blogs</a>
-        <a href="#" class="mx-20">Contact Us</a>
-    </div>
-    <div class="flex justify-center mb-16">
-        <button class="px-4 py-2 bg-green-500 rounded-full text-black font-bold">Book Consult</button>
-    </div>
-</footer>
-
-
-
+    <footer class="text-white bg-[#1C1C1C] mt-7 py-6 px-4 flex flex-col justify-center items-center">
+        <div class="text-center mb-8">
+            <h2 class="manrope-font text-lg md:text-xl font-bold">Rintero</h2>
+            <p class="manrope-font text-gray-400 text-sm md:text-base">The barn house captivates with its blend of rustic charm and modern sophistication.<br>Featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center mb-8">
+            <a href="" class="mx-2 md:mx-6 my-2 md:my-0">Services</a>
+            <a href="" class="mx-2 md:mx-6 my-2 md:my-0">Portfolio</a>
+            <a href="" class="mx-2 md:mx-6 my-2 md:my-0">Blogs</a>
+            <a href="" class="mx-2 md:mx-6 my-2 md:my-0">Contact Us</a>
+        </div>
+        <div class="flex justify-center mb-8">
+            <button class="px-6 py-2 bg-green-500 rounded-full text-black font-bold text-sm md:text-base">Book Consult</button>
+        </div>
+    </footer>
+    
 
 </body>
 
